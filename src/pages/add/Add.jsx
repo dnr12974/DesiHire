@@ -15,10 +15,14 @@ const Add = () => {
             />
             <label htmlFor="">Category</label>
             <select name="cats" id="cats">
-              <option value="design">Design</option>
-              <option value="web">Web Development</option>
-              <option value="animation">Animation</option>
-              <option value="music">Music</option>
+              <option value="design">Herbal Remedies</option>
+              <option value="web">Customised Pottery</option>
+              <option value="animation">Handicrafts</option>
+              <option value="music">Farming Tips</option>
+              <option value="music">Jewellary Design</option>
+              <option value="music">Carpets</option>
+              <option value="music">Garments and Dress materials</option>
+              <option value="music">OTHERS</option>
             </select>
             <label htmlFor="">Cover Image</label>
             <input type="file" />
