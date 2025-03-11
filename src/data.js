@@ -51,7 +51,7 @@ export const cards = [
         id: 9,
         title: "Wooden Artifacts",
         desc: "Handcrafted Woodwork",
-        img: "https://www.sohrvi.com/cdn/shop/collections/IMG_20221118_144715_446.jpg?v=1682789039",
+        img: "https://www.myangadi.com/image/cache/catalog/wooden-carvings/13-inch-ganesh-sitting-statue-60-320x320.jpg",
       },
       {
         id: 10,
