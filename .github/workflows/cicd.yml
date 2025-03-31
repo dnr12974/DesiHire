@@ -20,15 +20,15 @@ jobs:
 
       - name: Install Dependencies
         run: npm install
-        working-directory: backend
+        working-directory: api  
 
       - name: Run Tests
         run: npm test
-        working-directory: backend
+        working-directory: api  
 
       - name: Build Docker Image
-        run: docker build -t your-dockerhub-username/desihire-backend .
-        working-directory: backend
+        run: docker build -t dheernr/desihire-backend .
+        working-directory: api  
 
       - name: Log in to Docker Hub
         run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
