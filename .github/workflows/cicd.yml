@@ -27,14 +27,14 @@ jobs:
         working-directory: api  
 
       - name: Build Docker Image
-        run: docker build -t dheernr/desihire-backend .
+        run: docker build -t dheernr2974/desihire-backend .
         working-directory: api  
 
       - name: Log in to Docker Hub
         run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
 
       - name: Push Docker Image to Docker Hub
-        run: docker push your-dockerhub-username/desihire-backend:latest
+        run: docker push dheernr2974/desihire-backend:latest
 
       - name: Send Slack Notification
         run: |
