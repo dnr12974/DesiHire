@@ -7,13 +7,13 @@ WORKDIR /app
 # Copy package.json and package-lock.json first to leverage Docker caching
 COPY package.json package-lock.json ./
 
-# Install dependencies
-RUN npm install
+# Install dependencies with legacy peer dependencies
+RUN npm install --legacy-peer-deps
 
 # Copy the rest of the application files
 COPY . .
 
-# Expose the port your backend runs on (change if needed)
+# Expose the port your backend runs on
 EXPOSE 5000
 
 # Start the application
